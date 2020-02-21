@@ -1,0 +1,1 @@
+<?= $site_element['rev_elements_text_content']; ?>

@@ -1,0 +1,435 @@
+/*
+Theme Name: Eine Praxis
+Theme URI: https://www.sofasurfer.org
+Author: SofaSurfer
+Author URI: http://www.sofasurfer.org
+Description: WP theme for Eine Praxis für Naturheilkunde
+Version: 2.5
+*/
+
+
+html,body{
+    scroll-behavior: smooth;
+    font-size: 24px; 
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    letter-spacing: 0.1rem;   
+
+    height:100%;
+    width:100%;
+    overflow-x: hidden;
+    /*background-color: #FEFCF7;*/
+    /*background: url('assets/images/bkg5.jpg') no-repeat fixed center;*/
+    /*background-size: cover;*/
+    color: black; /*#444;*/
+}
+
+h1, h2, h3{
+    font-size: 1rem;
+    font-weight: 300;
+}
+h1{
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-weight: 350;
+}
+h2{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+p{
+    margin-bottom: 2rem; 
+}
+
+hr.is-style-wide{
+    clear: both;
+    border-top: 1.2px solid black;
+    margin-left: calc( -100vw / 2 + 100% / 2 );
+    margin-right: calc( -100vw / 2 + 100% / 2 );
+    max-width: 100vw;    
+    margin-bottom: 0;
+
+}
+
+
+.capture {
+    position: relative;
+    height: 200px;
+    z-index: 1;
+
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    margin-bottom: 3rem;
+    margin-right: -15px;
+}
+
+.capture.paralax{
+    background-attachment: fixed;
+}
+
+ul{
+    padding-left: 20px;    
+}
+
+a{
+    color: black;
+    text-decoration: underline;
+}
+a:hover{
+    color: #D0EFDD!important;    
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -200px;
+    visibility: hidden;
+}
+
+.has-large-font-size{
+    font-size: 2rem;
+}
+.wp-block-columns {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.wp-block-columns.has-2-columns .wp-block-column{
+    width: 50%;
+}
+.wp-block-columns.has-2-columns .wp-block-column:first-child{
+    padding-right: 2rem;
+}
+.wp-block-columns.has-2-columns .wp-block-column img{
+    width: 100%!important;
+    height: auto;
+}
+
+#main.container-fluid{
+    margin-top: 155px;
+    /*background-color: rgba(255, 255, 255, .8);*/
+
+}
+
+
+#main.container-fluid > blockquote p{
+    position: relative;
+    color: #D0EFDD;
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding-left: 3rem;
+    /*border-left: solid 0.2rem #343a40;*/
+    margin: 4rem 6rem 4rem 0rem;
+}
+
+#main.container-fluid > blockquote p::before{
+    position: absolute;
+    content: "«";
+    top: -90px;
+    left: -10px;
+    font-size: 6rem;
+}
+#main.container-fluid > blockquote p::after{
+    position: absolute;
+    content: "»";
+    bottom: -60px;
+    right: -20px;
+    font-size: 6rem;
+}
+
+.shadow-sm{
+    border: 0px;
+    box-shadow: none;
+}
+
+.header-nav{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 20;
+}
+.header-nav,
+.header-nav a.btn{
+    font-size: 3rem;    
+}
+
+.header-nav h5{
+    position: relative;
+    color: #C3654A;
+    font-size: 1.66rem;
+    font-weight: 200!important;
+    text-transform: uppercase;
+    max-width: 20rem;
+    padding-left: 130px;
+}
+.header-nav h5:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 90px;
+    width: 105px;
+    background-size: auto 90px;
+    background-image: url('assets/images/logo.png');
+}
+
+.header-nav h5 a{
+    color: #C3654A;
+    text-decoration: none;
+}
+
+#navbar-example2{
+    width: 1500px;
+}
+
+#menu-menu-1{
+    list-style: none;
+}
+
+#menu-menu-1 li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 4rem;
+}
+#menu-menu-1 li a{
+    color: #343a40!important;
+    font-size: 1.66rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: none;
+}
+#menu-menu-1 li a.active,
+#menu-menu-1 li a:hover{
+    color: #D0EFDD!important;
+    text-decoration: none;
+}
+.img-fluid-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.img-fluid-header figcaption{
+    position: absolute;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    font-size: 4rem;  
+}
+
+.alignfull{
+    margin-left: calc( -100vw / 2 + 100% / 2 );
+    margin-right: calc( -100vw / 2 + 100% / 2 );
+    max-width: 100vw;
+}
+
+
+#intro-screen{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #D0EFDD;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+#intro-screen div{
+    position: relative;
+    width: 600px;
+    color: #C3654A;
+    font-size: 2.5rem;
+    font-weight: 300!important;
+    text-transform: uppercase;    
+    text-align: left;
+}
+#intro-screen div:after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    height: 90px;
+    width: 105px;
+    background-size: auto 90px;
+    background-image: url('assets/images/logo.png');
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clear: both;
+    color: black;
+    border-top: solid 2px black;
+    padding: 2rem 0rem 1rem 0rem;
+    background-color: white;
+}
+
+footer li{
+    display: inline-block;
+    margin-right: 2rem;
+}
+footer .fas{
+    color: #C3654A;
+    font-size: 2rem;
+}
+
+
+
+
+@media screen and (min-width: 2100px) {
+    #main.container-fluid > h1,
+    #main.container-fluid > h2,
+    #main.container-fluid > p,
+    #main.container-fluid > div,
+    #main.container-fluid > blockquote{
+
+        /*display: block;*/
+        width: 1500px;
+        clear: both;
+        float:right;
+
+        padding-left: 0.6rem;
+        padding-right: 2rem;
+
+    }
+}
+
+@media screen and (max-width: 2100px) {
+    #navbar-example2{
+        width: 1200px;
+    }
+    #menu-menu-1 li{
+        padding-right: 2rem;
+    }
+    #menu-menu-1 li a{
+        font-size: 1.4rem;
+    }
+    #main.container-fluid > h1,
+    #main.container-fluid > h2,
+    #main.container-fluid > p,
+    #main.container-fluid > div,
+    #main.container-fluid > blockquote{
+
+        /*display: block;*/
+        width: 1200px;
+        clear: both;
+        float:right;
+
+        padding-left: 0.6rem;
+        padding-right: 2rem;
+
+    }
+
+
+}
+
+@media screen and (max-width: 1800px) {
+    #navbar-example2{
+        width: 950px;
+    }
+    #menu-menu-1 li{
+        padding-right: 1rem;
+    }
+    #menu-menu-1 li a{
+        font-size: 1.2rem;
+    }
+    #main.container-fluid > h1,
+    #main.container-fluid > h2,
+    #main.container-fluid > p,
+    #main.container-fluid > div,
+    #main.container-fluid > blockquote{
+
+        /*display: block;*/
+        width: 1225px;
+        clear: both;
+        float:right;
+
+        padding-left: 0.6rem;
+        padding-right: 2rem;
+
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    #navbar-example2{
+        width: 950px;
+        display: none;
+    }
+    #menu-menu-1 li{
+        padding-right: 1rem;
+    }
+    #menu-menu-1 li a{
+        font-size: 1.2rem;
+    }
+    #main.container-fluid > h1,
+    #main.container-fluid > h2,
+    #main.container-fluid > p,
+    #main.container-fluid > div,
+    #main.container-fluid > blockquote{
+
+        /*display: block;*/
+        width: 100%;
+        clear: both;
+        float: none;
+
+        padding-left: 0.6rem;
+        padding-right: 2rem;
+
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .wp-block-columns{
+        display: block;
+    }
+    .wp-block-columns.has-2-columns .wp-block-column {
+        width: 100%;
+    }    
+    #main.container-fluid > h1,
+    #main.container-fluid > h2,
+    #main.container-fluid > p,
+    #main.container-fluid > div,
+    #main.container-fluid > blockquote{
+
+        /*display: block;*/
+        width: 100%;
+        clear: both;
+        float: none;
+
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+
+    }
+
+    #intro-screen div{
+
+        width: 400px;
+        color: #C3654A;
+        font-size: 1.5rem;
+        font-weight: 300!important;
+    }
+    #intro-screen div:after{
+        top: -20px;
+        right: -0px;
+        height: 60px;
+        width: 70px;
+        background-size: auto 60px;
+        background-image: url('assets/images/logo.png');
+    }
+}
+
+
+

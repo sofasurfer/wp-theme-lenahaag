@@ -29,22 +29,6 @@
                     $(this).remove();
                 });
             });
-
-
-            // // Fix anchor
-            // $('h2').each(function(){
-            //     if(  typeof $(this).attr('id')  !== "undefined" ){
-            //         console.log( $(this).attr('id') );
-
-            //         var newLink = $("<a />", {
-            //             id : $(this).attr('id'),
-            //             class : 'anchor'
-            //         }).insertBefore( $(this) );
-
-            //         $(this).attr('id','old_'+$(this).attr('id'));
-
-            //     }
-            // });
         });
 
         /*

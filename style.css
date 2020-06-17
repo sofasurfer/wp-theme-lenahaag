@@ -36,6 +36,7 @@ h1{
 h2{
     margin-bottom: 2rem;
     text-transform: uppercase;
+    font-size: 1.2rem;
 }
 p{
     margin-bottom: 2rem; 
@@ -51,6 +52,9 @@ hr.is-style-wide{
 
 }
 
+.img-responsive{
+    width: 100%;
+}
 
 .capture {
     position: relative;
@@ -60,7 +64,7 @@ hr.is-style-wide{
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center top;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     margin-right: -15px;
 }
 
@@ -115,14 +119,19 @@ a.anchor {
 #main.container-fluid > blockquote p{
     position: relative;
     color: #D0EFDD;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 300;
-    padding-left: 3rem;
+    text-align: center;
+    /*padding-left: 3rem;*/
     /*border-left: solid 0.2rem #343a40;*/
     margin: 4rem 6rem 4rem 0rem;
 }
 
-#main.container-fluid > blockquote p::before{
+#main.container-fluid > ul.padding{
+    padding-left: 1.5rem!important;
+}
+
+/*#main.container-fluid > blockquote p::before{
     position: absolute;
     content: "«";
     top: -90px;
@@ -135,7 +144,7 @@ a.anchor {
     bottom: -60px;
     right: -20px;
     font-size: 6rem;
-}
+}*/
 
 .shadow-sm{
     border: 0px;
@@ -184,12 +193,17 @@ a.anchor {
 
 #menu-menu-1{
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    padding-right: 4rem;
 }
 
 #menu-menu-1 li{
     list-style: none;
     display: inline-block;
-    padding-right: 4rem;
+    padding-right: 0;
+    margin: 0;
 }
 #menu-menu-1 li a{
     color: #343a40!important;
@@ -290,6 +304,7 @@ footer .fas{
 @media screen and (min-width: 2100px) {
     #main.container-fluid > h1,
     #main.container-fluid > h2,
+    #main.container-fluid > ul,
     #main.container-fluid > p,
     #main.container-fluid > div,
     #main.container-fluid > blockquote{
@@ -310,14 +325,12 @@ footer .fas{
     #navbar-example2{
         width: 1200px;
     }
-    #menu-menu-1 li{
-        padding-right: 2rem;
-    }
     #menu-menu-1 li a{
         font-size: 1.4rem;
     }
     #main.container-fluid > h1,
     #main.container-fluid > h2,
+    #main.container-fluid > ul,
     #main.container-fluid > p,
     #main.container-fluid > div,
     #main.container-fluid > blockquote{
@@ -346,14 +359,12 @@ footer .fas{
     #navbar-example2{
         width: 1075px;
     }
-    #menu-menu-1 li{
-        padding-right: 1rem;
-    }
     #menu-menu-1 li a{
         font-size: 1.2rem;
     }
     #main.container-fluid > h1,
     #main.container-fluid > h2,
+    #main.container-fluid > ul,
     #main.container-fluid > p,
     #main.container-fluid > div,
     #main.container-fluid > blockquote{
@@ -393,12 +404,13 @@ footer .fas{
         padding-left: 100px;
     }
     .header-nav h5:before {
-        height: 70px;
+        height: 65px;
         width: 80px;
-        background-size: auto 70px;
+        background-size: auto 67px;
     }
     #main.container-fluid > h1,
     #main.container-fluid > h2,
+    #main.container-fluid > ul,
     #main.container-fluid > p,
     #main.container-fluid > div,
     #main.container-fluid > blockquote{
@@ -423,6 +435,7 @@ footer .fas{
     }    
     #main.container-fluid > h1,
     #main.container-fluid > h2,
+    #main.container-fluid > ul,
     #main.container-fluid > p,
     #main.container-fluid > div,
     #main.container-fluid > blockquote{
@@ -471,6 +484,10 @@ footer .fas{
     .capture.paralax{
         background-attachment: scroll;
     }
+
+    #main.container-fluid > blockquote p{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -487,8 +504,15 @@ footer .fas{
         font-size: 16px; 
     }
     .header-nav h5{
+        font-size: 0.8rem;
         margin-left: 30px;        
     }
+    .header-nav h5::before{
+        top: 0px;
+        height: 50px;
+        width: 60px;
+        background-size: auto 50px;
+    } 
     #menu-menu-1 {
         display: none;
     }
@@ -505,7 +529,10 @@ footer .fas{
         height: 50px;
         width: 60px;
         background-size: auto 50px;
-    }    
+    }
+
+
+
 }
 
 

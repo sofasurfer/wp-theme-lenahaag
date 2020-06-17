@@ -69,8 +69,14 @@
     <figure class="wp-block-image alignfull img-fluid-header">
         <?php
             $image = get_field('rev_header_image');
+            $image_mobile = get_field('rev_header_image_mobile');
         ?>
-        <img src="<?= $image['url']; ?>" alt="" class="wp-image-64" />
+        <img srcset="<?= $image['url'];?> 2048w, 
+                <?= $image_mobile['url'];?> 300w, 
+                <?= $image_mobile['url'];?> 1024w, 
+                <?= $image_mobile['url'];?> 768w, 
+                <?= $image['url'];?> 1536w" 
+                 class="wp-image-64" src="<?= $image['url'];?>">
     </figure>
 
     <h1><?=  get_field('rev_header_headline'); ?></h1>

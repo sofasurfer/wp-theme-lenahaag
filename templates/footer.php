@@ -29,6 +29,13 @@
                     $(this).remove();
                 });
             });
+
+            $('#m-open').click(function(){
+                $( "#m-nav" ).prop( "checked", true );
+            });
+            $('.menu-item').click(function(){
+                $( "#m-nav" ).prop( "checked", false );
+            });            
         });
 
         /*

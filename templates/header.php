@@ -40,7 +40,7 @@
 
         <script src="https://kit.fontawesome.com/c8df374f5c.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="<?= get_stylesheet_directory_uri(); ?>/style.css?v=<?= do_shortcode('[wp_version]') ;?>" />
+        <link rel="stylesheet" href="<?= get_stylesheet_directory_uri(); ?>/style.css?v=77" />
 
     </head>
     <body>
@@ -50,7 +50,8 @@
     <div id="home"></div>
     <div class="header-nav d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white ">
 
-      <h5 class="my-0 mr-md-auto font-weight-normal"><a href="#home"><?= get_bloginfo(); ?></a></h5>
+      <h5 id="m-open" class="my-0 mr-md-auto font-weight-normal"><a href="#home"><?= get_bloginfo(); ?></a></h5>
+      <input id="m-nav" type="checkbox"  />
         <!-- The WordPress Menu goes here -->
         <nav id="navbar-example2">
         <?php wp_nav_menu( 

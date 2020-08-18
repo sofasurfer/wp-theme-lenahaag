@@ -4,7 +4,7 @@ Theme URI: https://www.sofasurfer.org
 Author: SofaSurfer
 Author URI: http://www.sofasurfer.org
 Description: WP theme for Eine Praxis für Naturheilkunde
-Version: 2.1
+Version: 2.2
 */
 
 
@@ -50,6 +50,10 @@ hr.is-style-wide{
     max-width: 100vw;    
     margin-bottom: 0;
 
+}
+
+#m-nav{
+    display: none;
 }
 
 .img-responsive{
@@ -196,7 +200,8 @@ a.anchor {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;    
-    padding-right: 4rem;
+    padding-right: 3rem;
+    padding-left: 1.4rem;
 }
 
 #menu-menu-1 li{
@@ -516,6 +521,10 @@ footer .fas{
     #menu-menu-1 {
         display: none;
     }
+    #menu-menu-1 li{
+        display: block;
+        text-align: center;
+    }    
     #main.container-fluid {
         margin-top: 100px;    
     }
@@ -531,7 +540,19 @@ footer .fas{
         background-size: auto 50px;
     }
 
-
+    #m-nav:checked + #navbar-example2{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: white;
+    }
+    #m-nav:checked + #navbar-example2 #menu-menu-1{
+        display: block;
+    }
 
 }
 

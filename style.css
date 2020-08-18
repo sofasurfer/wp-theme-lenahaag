@@ -72,10 +72,6 @@ hr.is-style-wide{
     background-attachment: fixed;
 }
 
-#m-nav{
-    display: none;
-}
-
 ul{
     padding-left: 20px;    
 }
@@ -520,10 +516,6 @@ footer .fas{
     #menu-menu-1 {
         display: none;
     }
-    #menu-menu-1 li{
-        display: block;
-        text-align: center;
-    }
     #main.container-fluid {
         margin-top: 100px;    
     }
@@ -539,19 +531,7 @@ footer .fas{
         background-size: auto 50px;
     }
 
-    #m-nav:checked + #navbar-example2{
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 100vh;
-        width: 100vw;
-        background-color: white;
-    }
-    #m-nav:checked + #navbar-example2 #menu-menu-1{
-        display: block;
-    }
+
 
 }
 

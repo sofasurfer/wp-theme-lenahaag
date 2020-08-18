@@ -50,8 +50,7 @@
     <div id="home"></div>
     <div class="header-nav d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white ">
 
-        <label for="m-nav"><h5 class="my-0 mr-md-auto font-weight-normal"><a href="#home"><?= get_bloginfo(); ?></a></h5></label>
-        <input id="m-nav" type="checkbox"  />
+      <h5 class="my-0 mr-md-auto font-weight-normal"><a href="#home"><?= get_bloginfo(); ?></a></h5>
         <!-- The WordPress Menu goes here -->
         <nav id="navbar-example2">
         <?php wp_nav_menu( 

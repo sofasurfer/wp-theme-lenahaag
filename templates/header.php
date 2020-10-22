@@ -42,10 +42,11 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
         <link rel="stylesheet" href="<?= get_stylesheet_directory_uri(); ?>/style.css?v=1.1.0" />
 
+
     </head>
     <body>
     <div id="intro-screen">
-        <div class="intro-screen-text"><img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/LOGO_HOMEPAGE.svg" /></div>
+        <div class="intro-screen-text"><img src="https://www.einepraxis.ch/wp-content/uploads/2020/10/LOGO_HOMEPAGE.svg" /></div>
     </div>
     <div id="home"></div>
     <div class="header-nav d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white ">
